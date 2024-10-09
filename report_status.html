@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem Trạng thái Báo cáo</title>
+    <link rel="stylesheet" href="style_status_report.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Các lỗi đã báo cáo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã lỗi</th>
+                    <th>Loại lỗi</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0001</td>
+                    <td>Lỗi chính tả</td>
+                    <td class="status-rejected">Bị từ chối</td>
+                </tr>
+                <tr>
+                    <td>0002</td>
+                    <td>Thông tin sai lệch</td>
+                    <td class="status-resolved">Đã xử lý</td>
+                </tr>
+                <tr>
+                    <td>0003</td>
+                    <td>Liên kết hỏng</td>
+                    <td class="status-processing">Đang xử lý</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <div class="back-home">
+            <a href="index.html" class="btn-home">Quay lại trang chủ</a>
+        </div>
+    </div>
+</body>
+</html>
