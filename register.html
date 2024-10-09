@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký & Đăng Nhập</title>
+    <link rel="stylesheet" href="style_register.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <!-- Form Đăng Nhập -->
+            <div id="login-box" class="form">
+                <h2>Đăng Nhập</h2>
+                <form action="/login" method="POST">
+                    <input type="text" placeholder="Tên đăng nhập" name="username" required>
+                    <input type="password" placeholder="Mật khẩu" name="password" required>
+                    <button type="submit">Đăng Nhập</button>
+                    <p>Chưa có tài khoản? <a href="#" onclick="switchForm('register-box')">Đăng Ký</a></p>
+                </form>
+            </div>
+
+            <!-- Form Đăng Ký -->
+            <div id="register-box" class="form hidden">
+                <h2>Đăng Ký</h2>
+                <form action="/register" method="POST">
+                    <input type="text" placeholder="Tên đầy đủ" name="fullname" required>
+                    <input type="text" placeholder="Số điện thoại" name="phone" required>
+                    <input type="text" placeholder="Tên đăng nhập" name="username" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="password" placeholder="Mật khẩu" name="password" required>
+                    <input type="password" placeholder="Nhập lại mật khẩu" name="confirm-password" required>
+                    <button type="submit">Đăng Ký</button>
+                    <p>Đã có tài khoản? <a href="#" onclick="switchForm('login-box')">Đăng Nhập</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchForm(formId) {
+            document.getElementById('login-box').classList.add('hidden');
+            document.getElementById('register-box').classList.add('hidden');
+            document.getElementById(formId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
