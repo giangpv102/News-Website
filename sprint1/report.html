@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký & Đăng Nhập</title>
+    <link rel="stylesheet" href="style_report.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Các phần form khác như Đăng Nhập và Đăng Ký sẽ ở trên đây -->
+
+        <!-- Form Báo cáo lỗi -->
+        <div class="form-box">
+            <div id="report-box" class="form">
+                <h2>Báo cáo lỗi</h2>
+                <form action="/report" method="POST">
+                   
+                    <label for="error-type">Chọn lỗi bạn gặp phải:</label>
+                    <select id="error-type" name="error_type" required>
+                        <option value="spelling">Lỗi chính tả</option>
+                        <option value="wrong-info">Thông tin sai lệch</option>
+                        <option value="broken-link">Liên kết hỏng</option>
+                        <option value="offensive-content">Nội dung không phù hợp</option>
+                        <option value="other">Khác</option>
+                    </select>
+
+                    <label for="error-details">Chi tiết lỗi (tuỳ chọn):</label>
+                    <textarea id="error-details" name="error_details" rows="4" placeholder="Mô tả thêm về lỗi (nếu cần)"></textarea>
+
+                    <button type="submit">Gửi báo cáo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Bạn có thể thêm các script xử lý JavaScript ở đây nếu cần
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The5thNews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        /* Container for the entire layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Navigation bar styling */
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        /* Search bar styling */
+        .search-bar {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 20%;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .search-bar button img {
+            width: 20px;
+        }
+
+        /* Layout for the main content */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Category buttons */
+        .categories {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start; /* Align to the left */
+        }
+
+        .categories button {
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .categories button:hover {
+            background-color: #e4e4e4;
+        }
+
+        /* News grid */
+        .news-grid {
+            flex: 3;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: flex-end; /* Align grid items to the right */
+        }
+
+        /* Individual news items */
+        .news-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-item h3 {
+            font-size: 16px;
+            margin: 10px;
+            color: #333;
+        }
+
+        .news-item p {
+            font-size: 14px;
+            margin: 10px;
+            color: #777;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>The5thNews</h1>
+            <nav>
+                <a href="#">Trang Chủ</a>
+                <a href="#">Tin Mới</a>
+                <a href="report.html">Báo Lỗi</a>
+                <a href="register.html">Đăng Ký/Đăng Nhập</a>
+            </nav>
+        </header>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm">
+            <a href = 'search.html'><button><img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.s2fpUGqUzC_uxD_d_j-WlQHaGS%26pid%3DApi&sp=1729043326T8d10423bab0ed99039560721cdf2338146ca06f4366c17364888d3677faf33b5   " alt="search icon"></button></a>
+            <!-- <button><img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.b3LgbjytOXFP_mxuD6NfjgHaHv%26pid%3DApi&sp=1728972393Teee2d651379bdb8f832757675c3acae5dc77f177ff463d81365788a8d5ad83b5" alt="search icon"></button> -->
+        </div>
+
+        <!-- Main content section with categories on the left and news on the right -->
+        <div class="main-content">
+            <!-- Category buttons aligned to the left -->
+            <div class="categories">
+                <button>Thể Thao</button>
+                <button>Kinh Tế</button>
+                <button>Công Nghệ</button>
+                <button>Thời Tiết</button>
+            </div>
+
+            <!-- News grid aligned to the right -->
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.zzipDp0uhP2MsCEtQ7ow0gHaE3&pid=Api&P=0&h=180" alt="Messi News">
+                    <h3>Messi: 'Trái bóng sẽ nhớ Iniesta'</h3>
+                    <p>Chia sẻ đầy cảm xúc của Messi về Iniesta...</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.kMfA5KIH0oBjUKHoMvlR0wHaEK&pid=Api&P=0&h=180" alt="IT News">
+                    <h3>Bạn có thực sự phù hợp với ngành CNTT?</h3>
+                    <p>Thách thức và cơ hội dành cho những người...</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.zxohOQff3QNB2n9MIhco9gHaFj&pid=Api&P=0&h=180" alt="Weather News">
+                    <h3>Thời tiết hôm nay (7/10): Miền Bắc nắng, sáng sớm trời lạnh...</h3>
+                    <p>Thông tin chi tiết về thời tiết hôm nay...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2024 The5thNews. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
